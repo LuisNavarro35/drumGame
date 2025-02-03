@@ -17,31 +17,39 @@ footer {
 }
 
 .w {
-
+  background-image: url("./images/w.png");
+  background-size: cover;
 }
 
 .a {
+  background-image: url("./images/a.png");
+  background-size: cover;
 
 }
 
 .s {
-
+  background-image: url("./images/s.png");
+  background-size: cover;
 }
 
 .d {
-
+  background-image: url("./images/d.png");
+  background-size: cover;
 }
 
 .j {
-
+  background-image: url("./images/j.png");
+  background-size: cover;
 }
 
 .k {
-
+  background-image: url("./images/k.png");
+  background-size: cover;
 }
 
 .l {
-
+  background-image: url("./images/l.png");
+  background-size: cover;
 }
 
 .set {
@@ -78,4 +86,37 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+  
 }
+
+
+.beatcontainer {
+  width: 100%;
+  justify-content: center;
+  background-color: #DA0463;
+  
+}
+
+.beatrecord {
+  
+  background-color: antiquewhite;
+  min-height: 50px;
+  padding: 20px;
+  font-size: 20pt;
+  font-family: "Arvo", cursive;
+  word-break: break-all;
+  
+  
+}
+
+.btn {
+  width: 100px;
+  height: 50px;
+  margin: 20px;
+  font-size: 20pt;
+  background-color: azure;
+  font-family: "Arvo", cursive;
+  border-radius: 10px;
+}
+
+
