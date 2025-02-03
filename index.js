@@ -20,10 +20,10 @@ function triggerAudio(fileLetter) {
     letters = ["W","w", "A", "a", "S", "s", "D", "d", "J", "j", "K", "k", "L", "l"];
     if (letters.includes(fileLetter)) {
       var audiofile= "./sounds/" + fileLetter + ".mp3";
-      var audio = new Audio(audiofile); 
+      var audio = new Audio(audiofile.toLowerCase()); 
       audio.play();  
 
-      var activeButton = document.querySelector("." + fileLetter);
+      var activeButton = document.querySelector("." + fileLetter.toLowerCase());
       activeButton.classList.add("pressed");
      
       recordBeat(fileLetter);
@@ -34,7 +34,7 @@ function triggerAudio(fileLetter) {
 document.addEventListener("keyup", function(event){
     letters = ["W","w", "A", "a", "S", "s", "D", "d", "J", "j", "K", "k", "L", "l"];
     if (letters.includes(event.key)) {
-        var activeButton = document.querySelector("." + event.key);
+        var activeButton = document.querySelector("." + event.key.toLowerCase());
         activeButton.classList.remove("pressed");
     }
     
